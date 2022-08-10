@@ -1,0 +1,732 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #F1EEE9;
+}
+
+/* Estilos del Header */
+
+header{
+    background-color: #15133C;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+    margin-right: 40px;    
+}
+
+.nav-link:hover{
+    transform: scale(1.02);
+    color: #EC994B;
+}
+
+.img-fluid{
+    margin-left: 50px;
+}
+
+/* Estilo del Main */
+
+/*carousel*/
+
+.carousel {
+    padding: 20px;
+}
+
+.carousel-item.active>img {
+    animation: carousel-zoom 20000ms infinite;
+}
+
+@keyframes carousel-zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/*fin carousel*/
+
+.h1-Zaxu {
+    text-align: center;
+    font-size: 23px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+#productos {
+    display: grid;
+    grid-template-areas: "buscador buscador"
+        "cr7 pelota"
+        "nemezis messi"
+        "tiempo boca";
+    padding: 30px;
+}
+
+.buscador {
+    grid-area: buscador;
+    text-align: center;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+
+.h2-buscador {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #15133C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h2-dos {
+    font-size: 25px;
+    color: #15133C;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#productos {
+    grid-area: cr7;
+}
+
+#productos {
+    grid-area: pelota;
+}
+
+#productos {
+    grid-area: nemezis;
+}
+
+#productos {
+    grid-area: messi;
+}
+
+#productos {
+    grid-area: tiempo;
+}
+
+#productos {
+    grid-area: boca;
+}
+
+.img-section {
+    width: 95%;
+    border: groove #15133C;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.img-section:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1%);
+}
+
+.productos-item p {
+    color: black;
+    text-align: left;
+}
+
+
+.btn-item {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #e2f1f8;
+    padding: 9px 25px;
+    background: #15133C;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.btn-item:hover {
+    background-color: #15133C;
+    color: #EC994B;
+    transform: scale(1.1);
+}
+
+.btn-comprar {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.btn-comprar:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del footer */
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #15133C;
+    border-top: solid #EC994B;
+}
+
+.pie-pagina .ftr{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .ftr .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .ftr .box figure img{
+    width: 150px;
+}
+
+.pie-pagina .ftr .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-pagina .ftr .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .ftr .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #242166;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .ftr .red-social a:hover{
+    color: #EC994B;
+}
+.pie-pagina .copy{
+    background-color: #242166;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .copy small{
+    font-size: 15px;
+}
+
+/* RESPONSIVE FOOTER */
+
+@media screen and (max-width:800px){
+    .pie-pagina .ftr{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/* RESPONSIVE INDEX MEDIA QUARES*/
+
+@media screen and (max-width: 1200px) {
+    #productos {
+        display: grid;
+        grid-template-areas: "buscador buscador"
+            "cr7 pelota"
+            "nemezis messi"
+            "tiempo boca"
+    }
+
+    .btn-item {
+        margin-left: 10px;
+        font-weight: 500;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+
+    .productos-item p{
+        text-align: center;
+    }
+
+    
+
+    .h2-buscador {
+        font-size: 20px;    
+    }
+
+    .h1-Zaxu {
+        font-size: 20px;
+        margin: 1;
+    }
+
+    .header .opciones a {
+        font-size:  55%;
+    }
+
+    .header .boton button {
+        margin-left: 20px;
+        font-weight: 600;
+        color: #1b3039;
+        padding: 5px 15px;
+        font-size: 65%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    #productos {
+        display: grid;
+        grid-template-areas: "buscador"
+            "cr7"
+            "pelota"
+            "nemezis"
+            "messi"
+            "tiempo"
+            "boca";
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header .opciones {
+        display: none;
+    }
+
+    .header .boton button {
+        display: none;
+    }
+
+    .btn-item {
+        margin-left: 10px;
+        font-weight: 500;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+
+    .productos-item>p {
+        align-self: center;
+    }
+
+    .h2-buscador {
+        font-size: 20px;    
+    }
+
+    .h1-Zaxu {
+        font-size: 20px;
+        margin: 1;
+    }
+
+}
+
+/* RESPONSIVE FOOTER */
+
+@media screen and (max-width:800px){
+    .pie-pagina .ftr{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/* Estilos de PRODUCTOS */
+
+.h1-productos {
+    font-size: 120%;
+    margin: 20px;
+    padding: 350px;
+    background-image: url(../img/meci22.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    text-align: end;
+}
+
+.h1-prod {
+    margin-bottom: 30px;
+}
+
+#productos-productos {
+    display: grid;
+    grid-template-areas: "arg arsenal atletico barca"
+        "borussia city francia holanda"
+        "inter liverpool lyon milan"
+        "psg real river united";
+    margin-left: 70px;
+}
+
+#productos-productos {
+    grid-area: arg;
+}
+
+
+#productos-productos {
+    grid-area: arg;
+}
+
+#productos-productos {
+    grid-area: arsenal;
+}
+
+#productos-productos {
+    grid-area: atletico;
+}
+
+#productos-productos {
+    grid-area: barca;
+}
+
+#productos-productos {
+    grid-area: borussia;
+}
+
+#productos-productos {
+    grid-area: city;
+}
+
+#productos-productos {
+    grid-area: francia;
+}
+
+#productos-productos {
+    grid-area: holanda;
+}
+
+#productos-productos {
+    grid-area: inter;
+}
+
+#productos-productos {
+    grid-area: liverpool;
+}
+
+#productos-productos {
+    grid-area: lyon;
+}
+
+#productos-productos {
+    grid-area: milan;
+}
+
+#productos-productos {
+    grid-area: psg;
+}
+
+#productos-productos {
+    grid-area: real;
+}
+
+#productos-productos {
+    grid-area: river;
+}
+
+#productos-productos {
+    grid-area: united;
+}
+
+
+
+.img-productos {
+    width: 70%;
+    margin-top: 30px;
+    border: groove;
+}
+
+.img-productos:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1%);
+}
+
+.btn-item-producto {
+    margin-left: 10px;
+    font-weight: 500;
+    color: #e2f1f8;
+    padding: 4px 15px;
+    background: #15133C;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.btn-item-producto:hover {
+    background-color: #15133C;
+    color: #EC994B;
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE PRODUCTOS MEDIA QUARES */
+
+@media screen and (max-width: 1200px) {
+    #productos-productos {
+        display: grid;
+        grid-template-areas: "arg arsenal atletico"
+            "barca borussia city"
+            "francia holanda inter"
+            "liverpool lyon milan"
+            "psg real river"
+            "united united united";
+    }
+
+    .h1-productos {
+        font-size: 80%;
+        padding: 190px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #productos-productos {
+        display: grid;
+        grid-template-areas: "arg arsenal"
+            "atletico barca"
+            "borussia city"
+            "francia holanda"
+            "inter liverpool"
+            "lyon milan"
+            "psg real"
+            "river united";
+    }
+
+    .h1-productos {
+        font-size: 60%;
+        padding: 100px;
+    }
+}
+
+    /* ESTILOS DE NOSOTROS */
+
+    .main-nosotros{
+        background: url(../img/camp-nou-barcelona_1440x810_wmk.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nosotros-section{
+        background: url(../img/Untitled.png) no-repeat left;
+        background-size: 55%;
+        overflow: hidden;
+        padding: 100px 0;
+        margin-right: 50px;
+    }
+    
+    .inner-container{
+        width: 55%;
+        float: right;
+        background-color: #F1EEE9;
+        padding: 100px;
+        border: solid black;
+    }
+    
+    .inner-container h1{
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    
+    .texto{
+        font-size: 20px;
+        color: #545454;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    
+    /* RESPONSIVE MEDIA QUARES NOSOTROS */
+
+    @media screen and (max-width:1200px){
+        .inner-container{
+            padding: 80px;
+        }
+    }
+    
+    @media screen and (max-width:1000px){
+        .nosotros-section{
+            background-size: 100%;
+            padding: 100px 40px;
+            margin: 0;
+        }
+        .inner-container{
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:600px){
+        .nosotros-section{
+            padding: 0;
+            margin: 0;
+        }
+        .inner-container{
+            padding: 60px;
+        }
+    }
+
+    /* ESTILOS DE CONTACTO */
+
+    .container-form{
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .container-form h2{
+        margin-bottom: 15px;
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .container-form p{
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 50px;
+        display: block;
+        
+    }
+    .container-form a{
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: 700;
+    }
+    .container-form a i{
+        color: #e39403;
+        margin-right: 10px;
+    }
+    .container-form form .campo, textarea{
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 20px;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        outline: 0px;
+    }
+    .container-form form textarea{
+        max-width: 530px;
+        min-width: 530px;
+        min-height: 140px;
+        max-height: 150px;
+    }
+    .container-form .btn-enviar{
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        outline: 0px;
+        background: #15133C;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 300ms ease;
+        border-radius: 20px;
+    }
+    .container-form .btn-enviar:hover{
+        color: #e39403;
+        transform: scale(1.1);
+    }
+    
+    /* RESPONSIVE MEDIA QUARES CONTACTO */
+
+    @media screen and (max-width:1200px) {
+        .container-form p{
+            display: none;           
+        }
+        .container-form{
+            max-width: 800px;
+            padding: 50px;
+        }
+        .container-form a{
+            font-size: 15px;
+        }
+        .container-form form textarea{
+            max-width: 300px;
+            min-width: 400px;
+            min-height: 100px;
+            max-height: 100px;
+        }
+        .container-form form .campo, textarea{
+            padding: 15px;
+            font-size: 15px;            
+        }
+
+        .container-form .btn-enviar{
+            padding: 10px;
+            font-size: 15px;       
+            border-radius: 1px;
+            border-radius: 10px;
+        }
+    }
+
+/* ESTILOS AYUDA */
+
+.help{
+    padding: 25px;
+}
+
+.help h1{
+    margin: 30px;
+}
+
+.container-fluid-help{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.p-help{
+    cursor: pointer;
+    padding: 40px;
+    margin-left: 50px;
+    width: fit-content;
+}
